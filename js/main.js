@@ -237,6 +237,10 @@ String.prototype.replaceAll = function(search, replacement) {
  * console.log() de naam die deze functie returned
  */
 
+var namen = ['tostie', 'kaas', 'ham', 'brood'];
+
+console.log(namen.random());
+
 /**
  * Opdracht 17: Custom prototype method gebruiken
  * Maak een variabele waarin je een lange tekst opslaat
@@ -245,9 +249,12 @@ String.prototype.replaceAll = function(search, replacement) {
  * console.log() deze gewijzigde tekst
  */
 
+var langetext = ("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ea, dignissimos quaerat et tempora culpa dolorem eaque quis reprehenderit praesentium!")
+console.log(langetext.replaceAll(""));
+
 /**
  * Opdracht 18: Prototype based language
  * Geef antwoord op onderstaande vraag
  */
-console.log('Waarom heet JavaScript een prototype based language?', 'jouw antwoord');
+console.log('Waarom heet JavaScript een prototype based language?', 'omdat dat zo is');
 
