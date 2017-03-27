@@ -37,8 +37,6 @@
   var boolean4 = false;
   var boolean5 = true;
 
-debugger;
-
 /**
  * Opdracht 2: Arrays
  * Bedenk 3 arrays en vul ze met primitives
@@ -133,10 +131,13 @@ console.log(add(2,5));
  */
 
 function person(firstName,lastName) {
-    var newPerson = {firstName:firstname, lastName:lastname};
-    zzxx
+    var newPerson = {firstName:firstName, lastName:lastName};
+    
     console.log(newPerson);
+    return newPerson;
 }
+
+person("frank", "velde");
 
 
 
