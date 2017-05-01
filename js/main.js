@@ -250,18 +250,14 @@ console.log(namen.random());
  */
 
 var langetext = ("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ea, dignissimos quaerat et tempora culpa dolorem eaque quis reprehenderit praesentium!")
-console.log(langetext.replaceAll(""));
+console.log(langetext.replaceAll("Lorem", "Kaas"));
 
 /**
  * Opdracht 18: Prototype based language
  * Geef antwoord op onderstaande vraag
  */
-<<<<<<< HEAD
-console.log('Waarom heet JavaScript een prototype based language?', 'omdat dat zo is');
-=======
-console.log('Waarom heet JavaScript een prototype based language?',
-            'jouw antwoord');
->>>>>>> BerendWeij/master
+
+console.log('Waarom heet JavaScript een prototype based language?', 'Omdat alle functies in de protostaan');
 
 /**
  * Opdracht 19: Zelf een custom prototype method maken
@@ -269,6 +265,15 @@ console.log('Waarom heet JavaScript een prototype based language?',
  * je bij elke array een empty() functie kunt aanroepen.
  * Zorg ervoor dat deze functie er is en laat met 3 arrays zien dat hij werkt
  */
+
+ var kleuren = ['bruin', 'zwart', 'geel',  'wit'];
+
+Array.prototype.empty = function() {
+	.length
+
+ }
+
+  kleuren.splice(0,kleuren.length)
 
 /**
  * Opdracht 20: Monkey patching (?)
