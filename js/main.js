@@ -259,6 +259,7 @@ console.log(langetext.replaceAll("Lorem", "Kaas"));
 
 console.log('Waarom heet JavaScript een prototype based language?', 'Omdat alle functies in de protostaan');
 
+
 /**
  * Opdracht 19: Zelf een custom prototype method maken
  * Soms wil je een array leeg kunnen gooien. Het zou dus wel handig zijn als
