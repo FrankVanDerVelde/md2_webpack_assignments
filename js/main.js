@@ -1,3 +1,5 @@
+import './les_6.js';
+
 /**
  * Uitleg van deze opdrachten:
  * Kijk hoever je komt met deze opdrachten. Ik zal deze lijst in de toekomst
@@ -138,10 +140,6 @@ function person(firstName,lastName) {
 }
 
 person("frank", "velde");
-
-
-
-
  
 
 /**
@@ -150,11 +148,19 @@ person("frank", "velde");
  * Maak in dit object bij het aanmaken een functie aan met de naam 'showName'
  */
 
+
+
 /**
  * Opdracht 9: Arrays & for loops
  * Maak een array genaamd 'students' met daarin 10 namen van je medeleerlingen
  * Schrijf een for loop om alle namen in de Array te laten zien (console.log())
  */
+var students = ["mauro", "nanko", "jelle", "stefan", "frank", "jelle", "naomi", "bas", "destiny", "krengetje"];
+
+var i = 0;
+for (i = 0; i < students.length; i++) { 
+    console.log(students[i]) + "<br>";
+}
 
 /**
  * Opdracht 10: Strings samenvoegen
@@ -164,6 +170,12 @@ person("frank", "velde");
  * 'lastName' hier samen in worden opgeslagen
  */
 
+ var firstnameA = "frank ";
+ var lastnameA = "velde";
+
+ var fullnameA = firstnameA + lastnameA;
+ console.log(fullnameA)
+
 /**
  * Opdracht 11: Random cijfers
  * console.log() een willekeurige cijfer tussen 0 en 5
@@ -172,26 +184,32 @@ person("frank", "velde");
  * console.log() een willekeurige cijfer tussen -100 en 100
  */
 
+console.log(Math.floor(Math.random() * 6));
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 30);
+console.log(Math.floor(Math.random() * 200) + -100);
+
+
 /**
  * Opdracht 12: Primitive, Array of object?
  * Geef in de console.log antwoord op de vraag door een boolean op true of
  * false te zetten
  */
 console.log('De naam van een gebruiker sla ik op in een:',
-            { array : false, object : false, primitive : false });
+            { array : true, object : false, primitive : false });
 
 console.log('De naam, leeftijd en lengte van een gebruiker sla ik op in een:',
-            { array : false, object : false, primitive : false });
+            { array : false, object : true, primitive : false });
 
 console.log('Alle facturen van een zakelijke klant sla ik op in een:',
-            { array : false, object : false, primitive : false });
+            { array : false, object : true, primitive : false });
 
 console.log('Een factuur sla ik op in een:',
-            { array : false, object : false, primitive : false });
+            { array : false, object : false, primitive : true });
 
 console.log(
     'Als ik vanuit JavaScript een menu maak met knoppen, dan sla ik de knoppen op in een:',
-    { array : false, object : false, primitive : false });
+    { array : true, object : false, primitive : false });
 
 /**
  * Opdracht 13: Keywords
@@ -199,12 +217,23 @@ console.log(
  * Maak 4 variabelen aan met de const keyword
  */
 
+ let let1 = "1";
+ let let2 = "2";
+ let let3 = "3";
+ let let4 = "4";
+
+ const const1 = "1"; 
+ const const2 = "2";
+ const const3 = "3";
+ const const4 = "4";
+
+
 /**
  * Opdracht 14: Keywords
  * Geef antwoord op de volgende vragen:
  */
-console.log('Wanneer gebruik je de let keyword?', 'jouw antwoord');
-console.log('Wanneer gebruik je de const keyword', 'jouw antwoord');
+console.log('Wanneer gebruik je de let keyword?', 'waarneer je de variabelen reasignen later nog reasignen wil');
+console.log('Wanneer gebruik je de const keyword', 'als de indentifier niet gereasigned wordt');
 
 /**
  * Opdracht 15: Objects en array
@@ -213,6 +242,9 @@ console.log('Wanneer gebruik je de const keyword', 'jouw antwoord');
  * uit je familie
  * (objecten en arrays kunnen in elkaar opgeslagen worden)
  */
+
+ var mezelf = { naam: 'Frank', leeftijd: '18', lengte: '190', familie: ['Joke', 'Guus']
+};
 
 /**
  * Hieronder heb ik code geschreven die je nodig hebt voor vraag 16 en 17
@@ -270,7 +302,7 @@ console.log('Waarom heet JavaScript een prototype based language?', 'Omdat alle 
  var kleuren = ['bruin', 'zwart', 'geel',  'wit'];
 
 Array.prototype.empty = function() {
-	.length
+	
 
  }
 

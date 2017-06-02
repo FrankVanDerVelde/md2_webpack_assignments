@@ -8,6 +8,14 @@
  * Maak een variabele aan maar geef hem nog geen vulling. Console.log() wat existy() teruggeeft
  */
 
+ import {existy} from "utils/conditions.utils.js";
+
+ let chickentendies = "harry";
+
+ console.log(existy(chickentendies));
+
+ import {triggerseed} from "utils/newfunction.utils.js";
+
 /**
  * Opdracht 2: exports
  *
@@ -18,23 +26,36 @@
  * importeer je bestand hier en voer je functie uit
  */
 
+ import {randomNumber} from "utils/math.utils.js";
+ console.log(randomNumber(1,5));
+
 /**
  * Opdracht 3: Analyseer de Student Class
  *
  * Importeer de Class en maak 3 studenten aan
  * Beantwoord de volgende vragen
  */
-console.log('Wat is de prototype chain van een student?',
-            'jouw antwoord');
 
-console.log('Kan je na het aanmaken van een student nog bij zijn leeftijd?',
-            'jouw antwoord');
+ import Student from "entities/student.js";
+ const newStudent = new Student("frank", "velde", 17);
+
+console.log('constructor getFullName proto');
+
+console.log('kan je na het aanmaken van een student nog bij zijn leeftijd?', 'ja');
 
 /**
  * Opdracht 4: Student Class
  *
  * Console.log() de fullNames van je 3 aangemaakte studenten
  */
+
+ const student1 = new Student("cindy", "patat", 66);
+ const student2 = new Student("henk", "pizza", 13);
+ const student3 = new Student("patricia", "brard", 30);
+
+ console.log(student1.getFullName());
+ console.log(student2.getFullName());
+ console.log(student3.getFullName());
 
 /**
  * Opdracht 5: Custom class
